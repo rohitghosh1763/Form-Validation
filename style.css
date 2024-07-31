@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Anaheim:wght@400..800&family=Darker+Grotesque:wght@300..900&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Quicksand:wght@300..700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: url("src/background.png") no-repeat;
+    background-size: cover;
+}
+header {
+    font-family: "Quicksand";
+    text-align: center;
+}
+.contain {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    height: fit-content;
+    width: 480px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px 0px 30px;
+    gap: 10px;
+}
+label {
+    font-weight: bold;
+}
+input {
+    caret-color: red;
+    outline: none;
+    width: 80%;
+    padding: 5px 5px;
+    border: dashed 1px darkgrey
+}
+input:last-of-type {
+    margin-bottom: 9px;
+}
+.submit-btn {
+    outline: none;
+    border: none;
+    width: 100px;
+    padding: 8px 5px;
+    background-color: #003049;
+    border-radius: 10px;
+    margin-bottom: 32px;
+    font-weight: bold;
+    color: white;
+}
+.submit-btn:active{
+    transform: scale(0.95);
+}

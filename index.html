@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Validation</title>
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous"
+        />
+    </head>
+    <body>
+        <div class="container-fluid bg-light text-dark py-1">
+            <header>
+                <h1 class="display-6">Sign up now!</h1>
+            </header>
+        </div>
+        <section class="contain">
+            <form id="my-form" action="">
+                <label for="name">Name</label>
+                <input type="text" id="name" autocomplete="off" required />
+                <label for="email">Email</label>
+                <input type="email" id="email" autocomplete="off" required />
+                <label for="phone">Phone no.</label>
+                <input type="text" id="phone" autocomplete="off" required />
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    autocomplete="off"
+                    required
+                />
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    autocomplete="off"
+                    required
+                />
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+        </section>
+
+        <script src="script.js"></script>
+    </body>
+</html>
